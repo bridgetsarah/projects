@@ -1,0 +1,23 @@
+## USER DETAILS ##
+CREATE TABLE USER (
+    USERID              INTERGER(10)            PRIMARY KEY,
+    USERNAME            STRING(15)
+    FIRST_NAME          STRING(15)
+    LAST_NAME           STRING(30)
+    DATEOFBIRTH         INTERGER (8))
+
+ CREATE TABLE USER_ADDRESS (
+     ADDRESS_LINE1      STRING(30)
+     ADDRESS_LINE2      STRING(30)
+     TOWN               STRING(50)
+     POSTCODE           STRING(10)
+     COUNTY             STRING(15)
+     COUNTRY            STRING(50))   
+ 
+ 
+ ## USER PROFILE ##
+CREATE TABLE USER_PROFILE(
+     PROFILE_NAME       STRING(30)
+     PROFILE_AGE        INTERGER(2)
+     PROFILE_LOCATION   STRING(30)   
+)

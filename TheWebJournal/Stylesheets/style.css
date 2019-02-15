@@ -1,0 +1,98 @@
+@media all and (max-width: 60em) {
+  /* Too narrow to support three columns */
+  main { display: block; }
+}
+/**
+ * CONTENTS
+ *
+ * HEADER
+ * Logo.................Logo (If any?)
+ * Auth.................User Login
+ *
+ * BODY
+ * Fonts................Cursive
+ * Headings.............H1–H4 styles
+ * Grid.................###############
+ *
+ * MAIN
+ * Content..............###############
+ *
+ * NAVIGATION
+ * Nav..................###############
+ * Links................###############
+ *
+ * FOOTER
+ * Coming Soon..........###############
+ */
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+header {
+	background-color: lightblue
+}
+auth, logo, {
+	color: yellow
+}
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+
+body {
+	background: white	
+}
+
+
+h1 {
+	color: steelblue
+}
+h2 {
+	color: steelblue
+}
+h3 {
+	color: steelblue
+}
+h4 {
+	color: steelblue
+}
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main { display: grid;
+       grid: "h h h"
+             "a b c"
+             "f f f";
+       grid-template-columns: auto 1fr 20%; }
+article { grid-area: b; min-width: 12em;     }
+nav     { grid-area: a; min-width: 12em;	   }
+aside   { grid-area: c; min-width: 12em;     }
+
+article {
+	background-color: floralwhite
+}
+/*------------------------------------*\
+  #NAV
+\*------------------------------------*/
+nav {
+	background-color: floralwhite
+	
+}
+a {
+	color: steelblue
+	rebeccapurple
+}
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+footer {
+	background-color: floralwhite
+	
+}
+
+
+

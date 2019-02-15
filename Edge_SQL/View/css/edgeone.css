@@ -1,0 +1,43 @@
+/* EdgeOne Social Style Guide*/
+
+
+
+
+
+
+/* old Grid
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". Header Header Sidebar" ". content-1 content-1 Sidebar" ". content-2 content-2 Sidebar";
+  }
+  
+  .Sidebar { grid-area: Sidebar; }
+  
+  .Header { grid-area: Header; }
+  
+  .content-1 { grid-area: content-1; }
+  
+  .content-2 { grid-area: content-2; } 
+  
+  */
+
+
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.2fr 0.8fr;
+    grid-template-rows: 0.6fr 1.4fr 1fr;
+    grid-template-areas: "Sidebar-Not-active Header Header Sidebar" "Sidebar-Not-active Article Article Sidebar" "Sidebar-Not-active Article_2 Article_2 Sidebar";
+  }
+  
+  .Sidebar { grid-area: Sidebar; }
+  
+  .Header { grid-area: Header; }
+  
+  .Article { grid-area: Article; }
+  
+  .Article_2 { grid-area: Article_2; }
